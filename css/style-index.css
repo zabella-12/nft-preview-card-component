@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --veryDarkBlue: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --veryDarkBlueBody: hsl(215.63,57.14%,10.98%);
+    
+
+    
+}
+
+body {
+    background-color: var(--veryDarkBlueCard);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 650px;
+    width: 375px;
+    margin: 2% auto;
+    background-color: var(--veryDarkBlueCard);
+    box-shadow: 1px 14px 6px 12px var(--veryDarkBlue);
+}
+
+.img-main {
+    width: 330px;
+    margin: 7% auto;
+    height: 330px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+}
+
+.img-main:hover .masks{
+
+    cursor: pointer;
+    opacity: 0.4;
+    
+}
+
+.masks {
+    width: 330px;
+    height: 330px;
+    opacity: 0;
+    background-color: var(--cyan);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 260px;
+    margin: auto;
+    gap: 20px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.blue {
+    color: var(--softBlue);
+}
+
+.line {
+    height: 0.5px;
+    background-color: var(--veryDarkBlueLine);
+}
+
+.user-by {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.user-by img {
+    height: 45px;
+    margin-right: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.user:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
